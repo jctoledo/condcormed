@@ -46,7 +46,6 @@ class ComputeCorrelations:
         :return: the proportion of patients with a and b with respect to a
         '''
         pa = self.feature_patient_map[a]
-        #get the medication to patients map
         pb = self.feature_patient_map[b]
         numerator = len(list(set(pa) & set(pb)))  # number of intersecting patients between maps
         denominator = len(pa)
